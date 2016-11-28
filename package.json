@@ -1,0 +1,23 @@
+{
+  "name": "ng2-tour",
+  "version": "1.0.0",
+  "description": "Angular2 first steps",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thiagobitencourt/ng2-tour.git"
+  },
+  "keywords": [
+    "Angular2",
+    "Javascript"
+  ],
+  "author": "Thiago R. M. Bitencourt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiagobitencourt/ng2-tour/issues"
+  },
+  "homepage": "https://github.com/thiagobitencourt/ng2-tour#readme"
+}
