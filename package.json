@@ -4,7 +4,11 @@
   "description": "Angular2 first steps",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tcs": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/thiagobitencourt/ng2-tour/issues"
   },
-  "homepage": "https://github.com/thiagobitencourt/ng2-tour#readme"
+  "homepage": "https://github.com/thiagobitencourt/ng2-tour#readme",
+  "devDependencies": {
+    "typescript": "^2.0.10",
+    "typings": "^2.0.0"
+  }
 }
