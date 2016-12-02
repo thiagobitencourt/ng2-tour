@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { User } from './shared/models/user';
+import { Hero } from './shared/models/hero';
+import { HEROES } from './shared/constants/heroes';
 
 @Component({
   selector: 'my-app',
@@ -7,18 +8,11 @@ import { User } from './shared/models/user';
   styleUrls: ['./app/app.component.css']
 })
 export class AppComponent {
-  users: User[] = [
-    { id: 25, name: 'Chris', username: 'sevilayha'},
-    { id: 26, name: 'Nick', username: 'whatnicktweets'},
-    { id: 27, name: 'Holly', username: 'hollylawly'}
-  ];
-  activeUser: User;
+  selectedHero: Hero;
+  title: string = 'Tour of Heroes';
+  heroes = HEROES;
 
-  selectUser(user) {
-    this.activeUser = user;
-  }
-
-  onUserCreated(event) {
-    this.users.push(event.user);
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
   }
 }
