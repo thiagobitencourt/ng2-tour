@@ -8,9 +8,9 @@ For each finished course or tutorial there will be a branch with the resulting a
 - [scotch-io](https://github.com/thiagobitencourt/ng2-tour/tree/scotch-io)
 
 
-__Current branch *scotch-io*__
+__Current branch *master*__
 
-Creating a simple *todo app* based on [Scotch.io getting started course](https://school.scotch.io/getting-started-with-angular-2). 
+Creating the *Tour of Heroes* app based on [Angular.io tutorial](https://angular.io/docs/ts/latest/tutorial/). 
 
 - Angular 2
 - Typescript
