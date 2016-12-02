@@ -4,11 +4,10 @@
   "description": "Angular2 first steps",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tcs": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings",
-    "postinstall": "typings install"
+    "start": "tsc && concurrently \"tsc -w\" \"http-server\" ",
+    "test": "echo \"Error: no test specified\"",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -25,10 +24,6 @@
     "url": "https://github.com/thiagobitencourt/ng2-tour/issues"
   },
   "homepage": "https://github.com/thiagobitencourt/ng2-tour#readme",
-  "devDependencies": {
-    "typescript": "^2.0.10",
-    "typings": "^2.0.0"
-  },
   "dependencies": {
     "@angular/common": "^2.2.3",
     "@angular/compiler": "^2.2.3",
@@ -39,10 +34,21 @@
     "@angular/platform-browser-dynamic": "^2.2.3",
     "@angular/router": "^3.2.3",
     "@angular/upgrade": "^2.2.3",
+
+    "angular-in-memory-web-api": "~0.1.15",
+    "systemjs": "^0.19.41",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "^5.0.0-beta.12",
-    "systemjs": "^0.19.41",
     "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "http-server": "^0.9.0",
+    "typescript": "^2.0.10",
+
+    "@types/jasmine": "^2.5.38",
+    "@types/node": "^6.0.46",
+    "@types/selenium-webdriver": "^2.53.33"
   }
 }

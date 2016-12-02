@@ -16,5 +16,12 @@ Creating the *Tour of Heroes* app based on [Angular.io tutorial](https://angular
 - Typescript
 - System.js
 
+__Run__
+
+```
+npm install
+npm start
+```
+
 ## Author
 - Thiago R. M. Bitencourt (<thiago.mbitencourt@gmail.com>)
