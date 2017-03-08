@@ -4,24 +4,17 @@ Learning Angular 2 by following some courses and tutorials.
 For each finished course or tutorial there will be a branch with the resulting app code. 
 
 ## Branches:
+- [master](https://github.com/thiagobitencourt/ng2-tour/tree/master)
 - [angular-io](https://github.com/thiagobitencourt/ng2-tour/tree/angular-io)
 - [scotch-io](https://github.com/thiagobitencourt/ng2-tour/tree/scotch-io)
 
 
-__Current branch *angular-io*__
+__Current branch *master*__
 
-Creating the *Tour of Heroes* app based on [Angular.io tutorial](https://angular.io/docs/ts/latest/tutorial/). 
+Following the course from [Youtube](https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G) with [Loiane Groner](github.com/loiane)
 
 - Angular 2
 - Typescript
-- System.js
-
-__Run__
-
-```
-npm install
-npm start
-```
 
 ## Author
 - Thiago R. M. Bitencourt (<thiago.mbitencourt@gmail.com>)
