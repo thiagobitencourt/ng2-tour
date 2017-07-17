@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
+  nomePortal: string;
+  cursos: string[] = [ "Java", "Ext JS", "Angular" ];
 
-  constructor() { }
+  constructor() {
+    this.nomePortal = "http://portal.io";
+  }
 
   ngOnInit() {
   }
