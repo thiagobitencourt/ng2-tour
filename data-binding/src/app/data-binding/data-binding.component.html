@@ -1,6 +1,6 @@
+<!--
 <section class="property-binding">
 
-  <!--
   <article>
     <h3> Interpolação / Interpolation </h3>
     <p>String renderizada com interpolação: {{ url }}</p>
@@ -16,7 +16,6 @@
     <img [src]="urlImagem">
     <img bind-src="urlImagem">
   </article>
--->
 
   <article>
     <h3>Class e Style binding</h3>
@@ -51,7 +50,47 @@
           [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
             Esse texto apenas aparece em caso de erro!
           </div>
+        </div>
+  </article>
+
+</section>
+-->
+
+
+<section class="event-binding">
+  <article>
+    <h3>Event binding</h3>
+    <div>
+
+      <button
+        (click)="botaoClicado()"
+        class="btn btn-primary">
+      Me clique!</button>
+
+      <br><br>
+
+      <input type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput
+      />
+
+        <p>Valor atual: {{ valorAtual }}</p>
+        <p>Valor salvo: {{ valorSalvo }}</p>
+
+        <br><br>
+
+        <span
+          (mousehover)="onMouseOverOut()"
+          (mouseout)="onMouseOverOut()"
+          [class.highlight]="isMouseOver"
+          >Passe o mouse sobre mim!
+        </span>
+
     </div>
+
+
   </article>
 
 </section>
