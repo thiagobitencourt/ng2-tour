@@ -1,4 +1,4 @@
-<h5>Exemplos de pipes</h5>
+<!-- <h5>Exemplos de pipes</h5>
 
 <p>Título: {{ livro.titulo | uppercase | lowercase | camelCase }}</p>
 <p>Estrelas: {{ livro.rating | number:'1.1-1' }}</p>
@@ -9,7 +9,7 @@
 <br>
 <pre>
   <p>Livro: {{ livro | json }}</p>
-</pre>
+</pre> -->
 
 <br>
 <h5> Pipe puro </h5>
@@ -28,13 +28,19 @@
 
 <h5> Pipe impuro </h5>
 
-<input type="text" [(ngModel)]="filtro">
-<br>
-<input type="text" #novoValor2>
-<button (click)="addLivro(novoValor2.value)">Add Livro</button>
+<button (click)="addLivro(novoValor.value)">Add Livro</button>
 
 <ul>
   <li *ngFor="let liv of livros | filtroArrayImpuro:filtro">
+    {{ liv }}
+  </li>
+</ul>
+
+
+<h5> Maneira correta de usar filtro </h5>
+
+<ul>
+  <li *ngFor="let liv of obterLivros()">
     {{ liv }}
   </li>
 </ul>
