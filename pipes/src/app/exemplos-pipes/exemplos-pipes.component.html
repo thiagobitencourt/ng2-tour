@@ -10,3 +10,17 @@
 <pre>
   <p>Livro: {{ livro | json }}</p>
 </pre>
+
+<br>
+<h5> Livros filtrados </h5>
+
+<input type="text" [(ngModel)]="filtro">
+<br>
+<input type="text" #novoValor>
+<button (click)="addLivro(novoValor.value)">Add Livro</button>
+
+<ul>
+  <li *ngFor="let liv of livros | filtroArray:filtro">
+    {{ liv }}
+  </li>
+</ul>
