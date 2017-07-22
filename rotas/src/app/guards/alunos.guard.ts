@@ -11,8 +11,8 @@ export class AlunosGuard implements CanActivateChild {
 
 
     if(state.url.includes('editar')) {
-      alert('Sem acesso a edição!');
-      return false;
+      // alert('Sem acesso a edição!');
+      // return false;
     }
     console.log('Guarda de rota filha')
 
