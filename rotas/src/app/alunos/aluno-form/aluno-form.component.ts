@@ -3,13 +3,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 
 import { AlunosService } from '../alunos.service';
+import { FormCanDeactivate } from '../../guards/form-candeactivate';
 
 @Component({
   selector: 'app-aluno-form',
   templateUrl: './aluno-form.component.html',
   styleUrls: ['./aluno-form.component.css']
 })
-export class AlunoFormComponent implements OnInit {
+export class AlunoFormComponent implements OnInit, FormCanDeactivate {
 
   id: number;
   inscricao: Subscription;
@@ -27,7 +28,7 @@ export class AlunoFormComponent implements OnInit {
     this.formMudou = true;
   }
 
-  podeMudarRota() {
+  podeDesativar() {
     if(this.formMudou) {
       confirm('Tem certeza que deseja sair deta página?');
     }
