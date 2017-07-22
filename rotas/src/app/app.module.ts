@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './app.routing.module';
     BrowserModule,
     MaterializeModule,
     CursosModule,
+    AlunosModule,
     AppRoutingModule
   ],
   providers: [],
