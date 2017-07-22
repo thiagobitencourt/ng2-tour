@@ -1,3 +1,11 @@
-<p>
-  aluno-detalhe works!
-</p>
+<h5>Detalhes do aluno!</h5>
+
+<div [hidden]="!aluno">
+  <p>Id: {{ aluno.id }}</p>
+  <p>Nome: {{ aluno.nome }}</p>
+  <p>Email: {{ aluno.email }}</p>
+</div>
+
+<a class="waves-effect waves-light btn" (click)="editarContato()">
+  Editar contato
+</a>
