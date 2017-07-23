@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateFormComponent implements OnInit {
 
   usuario: any = {
-    
+
   }
 
   constructor() { }
@@ -18,7 +18,6 @@ export class TemplateFormComponent implements OnInit {
 
   onSubmit(form) {
     console.log(form);
-    console.log(this.usuario);
   }
 
 }
