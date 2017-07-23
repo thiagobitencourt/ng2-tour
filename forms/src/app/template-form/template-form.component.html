@@ -7,6 +7,7 @@
       name="nome"
       placeholder="Nome"
       [ngModel]="usuario.nome"
+      required
     />
   </div>
   <div class="form-group">
@@ -17,6 +18,7 @@
       name="email"
       placeholder="nome@email.com"
       [ngModel]="usuario.email"
+      email required
     />
   </div>
    <button type="submit" class="btn btn-primary">Submit</button>
