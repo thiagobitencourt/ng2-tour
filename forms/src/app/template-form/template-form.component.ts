@@ -23,6 +23,7 @@ export class TemplateFormComponent implements OnInit {
       .map(response => response)
       .subscribe(response => {
         console.log(response);
+        form.form.reset();
       });
   }
 

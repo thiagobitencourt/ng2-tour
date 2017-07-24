@@ -34,7 +34,14 @@ export class DataFormComponent implements OnInit {
       .map(response => response)
       .subscribe(response => {
         console.log(response);
-      });
+        this.resetar();
+      },
+        error => alert('Error')
+      );
+  }
+
+  resetar() {
+    this.formulario.reset();
   }
 
 }
