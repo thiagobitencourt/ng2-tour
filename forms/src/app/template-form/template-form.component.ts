@@ -51,10 +51,10 @@ export class TemplateFormComponent implements OnInit {
     }
   }
 
-  populaDadosForm(dados, formulatio) {
-    // formulatio.setValue({
-    //   nome: formulatio.value.nome,
-    //   email: formulatio.value.email,
+  populaDadosForm(dados, formulario) {
+    // formulario.setValue({
+    //   nome: formulario.value.nome,
+    //   email: formulario.value.email,
     //   endereco: {
     //     rua: dados.logradouro,
     //     cep: dados.cep,
@@ -66,7 +66,7 @@ export class TemplateFormComponent implements OnInit {
     //   }
     // });
 
-    formulatio.form.patchValue({
+    formulario.form.patchValue({
       endereco: {
         rua: dados.logradouro,
         cep: dados.cep,
