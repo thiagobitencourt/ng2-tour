@@ -1,5 +1,5 @@
 <form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
-  <div class="form-group">
+  <div class="form-group" [ngClass]="aplicaCssErro('nome')">
 
     <div class="col-sm-12">
       <label for="nome" class="control-label">Nome</label>
@@ -10,10 +10,14 @@
         name="nome" placeholder="Nome"
         formControlName="nome"
       />
+      <app-campo-control-erro
+       [mostrarErro]="verificaValidTouched('nome')"
+       msgErro="O nome é obrigatório"
+      ></app-campo-control-erro>
     </div>
   </div>
 
-  <div class="form-group">
+  <div class="form-group" [ngClass]="aplicaCssErro('email')">
     <div class="col-sm-12">
       <label for="email" class="control-label">Email</label>
     </div>
@@ -25,6 +29,14 @@
         placeholder="nome@email.com"
         formControlName="email"
       />
+      <app-campo-control-erro
+       [mostrarErro]="verificaValidTouched('email')"
+       msgErro="Email é obrigatório"
+      ></app-campo-control-erro>
+      <app-campo-control-erro
+       [mostrarErro]="verificaEmailInvalido()"
+       msgErro="Email inválido"
+      ></app-campo-control-erro>
     </div>
   </div>
 
